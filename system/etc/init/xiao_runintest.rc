@@ -1,0 +1,6 @@
+on post-fs-data
+    mkdir /data/log_temp 0755 system system
+    mkdir /data/misc/mblog 0755 system system
+
+service xiao_runintest /system/bin/xiao_runintest
+    class main

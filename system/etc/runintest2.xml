@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameter>
+    <!-- landscape , portrait -->
+    <options
+        name="screen_orientation"
+        para="portrait" >
+    </options>
+
+    <options
+        name="rt_language"
+        para="CN" >
+    </options>
+
+    <options
+        name="charge_limit"
+        para="[80-90]" >
+    </options>
+
+    <!--new:Only parmOn is configured in the runintest2_pa.xml ;
+        old:parmOn and parmOff is configured in the runintest2_pa.xml -->
+    <options
+        name="rt_pa_platform"
+        para="new" >
+    </options>
+
+    <options
+        name="mmi87_i"
+        para="7233" >
+    </options>
+    
+    <options
+        name="force_mirror"
+        para="false" >
+    </options>
+
+    <!-- Parameter Start -->
+
+    <item
+        name="rt_reboot"
+        switch="true">
+    </item>
+
+    <item
+        name="rt_i2c"
+        para="arm11{TP,CHG,BCAMERA,FCAMERA}"
+        switch="true">
+    </item>
+
+<!--    <item
+        name="rt_tp"
+        para="boe{act{com.focaltech.ft_terminal_test/.MainActivity,ext[command:1,view:1,autoFinish:1,delay:0,reTry:0]},rec{com.focaltech.ft_terminal_test}};"
+        switch="true">
+    </item> -->
+
+<!--    <item-->
+<!--        name="rt_pa"-->
+<!--        switch="true">-->
+<!--    </item>-->
+
+    <item
+        name="rt_lcdled"
+        para="red{/sys/class/backlight/sprd_backlight/brightness};"
+        switch="true">
+    </item>
+
+    <item
+        name="rt_cpu"
+        para="4"
+        switch="true">
+    </item>
+
+    <item
+        name="rt_bt"
+        switch="true">
+    </item>
+
+    <item
+        name="rt_wifi"
+        para="2"
+        switch="true">
+    </item>
+
+    <item
+        name="rt_audioloop"
+        para="mic{record_select_mic,handset-mic};35"
+        switch="true">
+    </item>
+
+    <item
+        name="rt_video"
+        switch="true">
+    </item>
+
+    <item
+        name="rt_s3"
+        switch="true">
+    </item>
+
+    <item
+        name="rt_vibrator"
+        switch="true">
+    </item>
+
+    <item
+        name="rt_parts"
+        para="parts_bt,parts_camera,parts_camera_front,parts_gps,parts_wifi"
+        switch="true">
+    </item>
+
+    <item
+        name="rt_fingerprint"
+        para="Sunwave,com.swfp.factory/com.swfp.activity.DetectActivity2;FPC,com.fingerprints.sensortesttool/.activities.MainActivity"
+        switch="false">
+    </item>
+
+    <!-- para="open[0,-1];openLegacy[2,0x100];open[1,-1]" -->
+    <item
+        name="rt_camera"
+        para="open[0,-1];open[1,-1]"
+        switch="true">
+    </item>
+
+    <item
+        name="rt_emmc"
+        switch="true">
+    </item>
+
+    <item
+        name="rt_ddr"
+        switch="true">
+    </item>
+
+    <item
+        name="rt_current"
+        para="current_light[-1000000-120000];current_dark[-1000000-250000];
+        current_wifi[-1000000-400000];current_bt[-1000000-400000];
+        current_gps[-1000000-400000];current_codec[-1000000-900000];
+        current_camera0[-1000000-600000];current_camera1[-1000000-600000];
+        current_wifi5G[-1000000-400000]"
+        switch="true">
+    </item>
+    <!-- Parameter end -->
+
+</parameter>
